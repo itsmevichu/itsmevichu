@@ -20,7 +20,7 @@ jobs:
             files/github-contribution-grid-snake.svg
             files/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
-          GITHUB_TOKEN: ${{ SNAKE_PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SNAKE_PAT_TOKEN }}
 
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
       - name: push
